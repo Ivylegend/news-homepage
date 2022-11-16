@@ -1,0 +1,240 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: sans-serif;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.container{
+    padding: 20px;
+}
+
+img{
+    max-width: 100%;
+}
+
+header{
+    margin-bottom: 40px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+ul{
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 30px;
+    width: 50%;
+    background-color: white;
+    height: 100vh;
+    line-height: 3;
+    cursor: pointer;
+    display: none;
+}
+
+ul li:hover{
+    color: hsl(5, 85%, 63%);
+}
+
+ul img{
+    position: relative;
+    left: 80%;
+    margin-bottom: 40px;
+}
+
+.open{
+    cursor: pointer;
+}
+
+.one{
+    margin-bottom: 30px;
+}
+
+.one h1{
+    font-weight: 800;
+    font-size: 2.5rem;
+    width: 80%;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.one p{
+    margin-bottom: 25px;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+}
+
+.one button{
+    letter-spacing: 3px;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    color: white;
+    border: none;
+    background-color:  hsl(5, 85%, 63%);
+}
+
+main{
+    background-color: hsl(240, 100%, 5%);
+    padding: 20px;
+    color: hsl(233, 8%, 79%);
+    margin-bottom: 40px;
+}
+
+main h2{
+    color: hsl(35, 77%, 62%);
+    margin-bottom: 25px;
+}
+
+main h3{
+    color: white;
+    margin-bottom: 10px;
+}
+
+h3:hover{
+    color: hsl(35, 77%, 62%);
+    cursor: pointer;
+}
+
+main p{
+    margin-bottom: 30px
+}
+
+hr{
+    font-weight: 100;
+    border: 1px 1px hsl(233, 8%, 79%);
+    margin-bottom: 30px;
+}
+
+footer div{
+    display: flex;
+    margin-bottom: 30px;
+}
+
+footer img{
+    width: 30%;
+}
+
+footer label{
+    margin-left: 20px;
+    line-height: 1.5;
+}
+
+footer span{
+    font-size: 2.5rem;
+    color: hsl(233, 8%, 79%);;
+}
+
+footer h4{
+    font-weight: 800;
+    line-height: 2;
+    letter-spacing: 1px;
+    font-size: 1.1rem;
+}
+
+h4:hover{
+    color: hsl(5, 85%, 63%);
+    cursor: pointer;
+}
+
+.desktop{
+    display: none;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: hsl(35, 77%, 62%);
+}
+
+@media (min-width: 700px) {
+    .container{
+        padding: 80px;
+    }
+
+    .mobile{
+        display: none;
+    }
+
+    .desktop{
+        display: block;
+        margin-right: 20px;
+    }
+
+    ul{
+        display: inline-block;
+        background-color: transparent;
+        line-height: 8;
+        padding-right: 60px;
+    }
+
+    ul li{
+        float: right;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .close{
+        display: none;
+    }
+
+    .open{
+        display: none;
+    }
+
+    section{
+        display: flex;
+    }
+
+    main{
+        margin-left: 20px;
+    }
+
+    .inner{
+        display: flex;
+        margin-top: 20px;
+        justify-content: space-between;
+    }
+
+    .inner h1{
+        font-size: 3rem;
+    }
+
+    .inner span{
+        width: 500px;
+        padding-top: 20px;
+    }
+
+    footer{
+        display: flex;
+    }
+
+    main h3:hover{
+        color: hsl(35, 77%, 62%);
+        cursor: pointer;
+    }
+
+    label h4{
+        font-size: 15px;
+    }
+
+    button:hover{
+        cursor: pointer;
+        background-color: hsl(35, 77%, 62%);
+    }
+}
